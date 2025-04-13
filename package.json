@@ -21,7 +21,7 @@
     "nuxt": "^3.16.2",
     "postcss-nested": "^7.0.2",
     "varvara-css": "^0.5.2",
-    "vue": "latest",
-    "vue-router": "latest"
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   }
 }
