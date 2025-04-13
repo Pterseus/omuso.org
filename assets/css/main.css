@@ -1,0 +1,127 @@
+@import 'varvara-css/css';
+
+@theme {
+  --border: green;
+}
+
+:root {
+  /* --va-border-width: 2px; */
+  --va-collapse-tree-indentation: var(--va-space-4);
+}
+
+.va-collapse .va-button {
+  line-height: 1;
+}
+
+.light-mode {
+  --va-color-primary: #004d5e;
+  color-scheme: light;
+}
+
+.dark-mode {
+  color-scheme: dark;
+  --va-color-primary: #00c8f5;
+  --va-color-background: #161c1d;
+}
+
+body {
+  font-family: 'Istok Web', sans-serif;
+  /* font-family: 'Fira Sans', sans-serif; */
+}
+
+h1 {
+  @apply text-2xl;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply text-lg;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Cabin', sans-serif;
+  font-weight: bolder;
+}
+
+[class*='container'] {
+  @apply max-w-6xl;
+  margin: 0 auto;
+  padding-left: var(--va-space-4);
+  padding-right: var(--va-space-4);
+}
+
+.link-effect {
+  position: relative;
+  &:after {
+    content: '→';
+  }
+  &:hover:after {
+    content: ' →';
+  }
+}
+
+.section {
+  &--hero {
+    padding-top: var(--va-space-6);
+    padding-bottom: var(--va-space-8);
+    border-bottom-width: var(--va-border-width);
+
+    background-image: radial-gradient(var(--va-text-weak) 0.5px, transparent 0.5px), radial-gradient(var(--va-text-weak) 0.5px, var(--va-color-background) 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+
+    h2 {
+      @apply text-6xl md:text-[84px];
+      line-height: 1;
+      margin-bottom: var(--va-space-2);
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+  h1 {
+    font-size: var(--va-font-size-8);
+    margin-bottom: var(--va-space-3);
+  }
+
+  &__container {
+  }
+}
+
+.color-primary {
+  background-color: var(--va-background-primary);
+  background-image: radial-gradient(var(--va-color-primary) 0.5px, transparent 0.5px), radial-gradient(var(--va-color-primary) 0.5px, var(--va-background-primary) 0.5px);
+  background-size: 2px 2px;
+  background-position: 0 0, 1px 1px;
+}
+
+.text-scoped {
+  h1 {
+    @apply text-5xl mb-4;
+  }
+
+  h2 {
+    @apply text-3xl mb-6 -mt-8 pt-16 hover:underline;
+  }
+
+  h3 {
+    @apply text-xl  my-3;
+  }
+
+  p,
+  li {
+    @apply text-lg my-2;
+  }
+
+  ul {
+    @apply pl-10 list-disc;
+  }
+}

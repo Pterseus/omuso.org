@@ -1,0 +1,27 @@
+{
+  "name": "omuso.org",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun run generate:route-mappings && nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "generate:route-mappings": "bun lib/generate-route-mappings.ts"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.4.0",
+    "@nuxtjs/color-mode": "3.5.2",
+    "@nuxtjs/i18n": "^9.5.3",
+    "@nuxtjs/tailwindcss": "6.13.2",
+    "@octokit/rest": "^21.1.1",
+    "@vueuse/nuxt": "12.5.0",
+    "gray-matter": "^4.0.3",
+    "nuxt": "^3.16.2",
+    "postcss-nested": "^7.0.2",
+    "varvara-css": "^0.5.2",
+    "vue": "latest",
+    "vue-router": "latest"
+  }
+}
