@@ -1,0 +1,7 @@
+.env*
+.git
+.nuxt
+.output
+Dockerfile
+node_modules
+README.md
