@@ -20,7 +20,7 @@
     "gray-matter": "^4.0.3",
     "nuxt": "^3.16.2",
     "postcss-nested": "^7.0.2",
-    "varvara-css": "^0.5.2",
+    "varvara-css": "^0.5.3",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   }

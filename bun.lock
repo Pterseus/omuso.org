@@ -13,7 +13,7 @@
         "gray-matter": "^4.0.3",
         "nuxt": "^3.16.2",
         "postcss-nested": "^7.0.2",
-        "varvara-css": "^0.5.2",
+        "varvara-css": "^0.5.3",
         "vue": "^3.5.13",
         "vue-router": "^4.5.0",
       },
@@ -1842,7 +1842,7 @@
 
     "util-deprecate": ["util-deprecate@1.0.2", "", {}, "sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw=="],
 
-    "varvara-css": ["varvara-css@0.5.2", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-bmpw2Ny99Dwe2V40LFHuiYKTJgcAXPJtznA4Dr/wx5ObGmEjOMmh6kBIrf4AQ0Ci6AZq5NPOZZEoVBwzC9T3dA=="],
+    "varvara-css": ["varvara-css@0.5.3", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-NyVYPzsPMaAmDE935RP4uERoLG0HKr6faNMSn3s1rMCfWb8ni9Q5fMziLQP0hACH5/r1TXnwaXoZg0QaBQq+YA=="],
 
     "vary": ["vary@1.1.2", "", {}, "sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg=="],
 
