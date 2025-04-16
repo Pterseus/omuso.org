@@ -1,8 +1,9 @@
 {
-  "welcome": "Reading the classics",
-  "slogan": "A gateway to self-knowledge, empathy and understanding of the world around us.",
+  "slogan": "Reading the classics",
+  "description": "A gateway to self-knowledge, empathy and understanding of the world around us.",
   "home": "Home",
   "library": "Library",
+  "library-description": "A selected list of classic literature",
   "about": "About",
   "languages": "Languages",
   "language": "Language",

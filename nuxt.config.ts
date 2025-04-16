@@ -1,14 +1,7 @@
-import { bookRoutes } from './book-routes'
-
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   ssr: true,
-  app: {
-    head: {
-      title: 'OMUSO.ORG'
-    }
-  },
   modules: ['@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/color-mode', '@nuxtjs/tailwindcss'],
   css: ['~/assets/css/main.css'],
   postcss: {
@@ -22,12 +15,14 @@ export default defineNuxtConfig({
       {
         code: 'en',
         name: 'English',
+        language: 'en',
         domain: process.env.DOMAIN_EN,
         file: 'en.json'
       },
       {
         code: 'es',
         name: 'Spanish',
+        language: 'es',
         domain: process.env.DOMAIN_ES,
         file: 'es.json'
       }

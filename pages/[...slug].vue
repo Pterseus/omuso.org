@@ -18,6 +18,10 @@ const { data: page } = await useAsyncData(
     watch: [locale]
   }
 )
+
+useSeoMeta({
+  title: page.value?.title
+})
 </script>
 
 <template>

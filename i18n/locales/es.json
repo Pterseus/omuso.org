@@ -1,8 +1,9 @@
 {
-  "welcome": "Explorando los clásicos",
-  "slogan": "Una puerta al autoconocimiento, la empatía y la comprensión del mundo que nos rodea.",
+  "slogan": "Explorando los clásicos",
+  "description": "Una puerta al autoconocimiento, la empatía y la comprensión del mundo que nos rodea.",
   "home": "Inicio",
   "library": "Librería",
+  "library-description": "Una lista seleccionada de literatura clásica",
   "about": "Acerca de",
   "languages": "Idiomas",
   "language": "Idioma",

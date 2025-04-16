@@ -7,11 +7,15 @@ const { t } = useI18n()
 const route = useRoute()
 
 const bookReference = bookRoutes[deslugify(route.params.title as string) as keyof typeof bookRoutes]
-const [title, language] = bookReference?.split('::')
+const [id, language] = bookReference?.split('::')
 
-const { data: page } = await useAsyncData('texts-' + title.toLowerCase(), () => {
-  const path = `/data/${title.toLowerCase()}/${language}`
+const { data: page } = await useAsyncData('texts-' + id.toLowerCase(), () => {
+  const path = `/data/${id.toLowerCase()}/${language}`
   return queryCollection('readings').path(path).first()
+})
+
+useSeoMeta({
+  title: page.value?.title
 })
 
 const links = [
@@ -44,8 +48,9 @@ const { y } = useWindowScroll()
         <details class="mb-4 va-collapse sticky top-16 max-h-[calc(100vh-5rem)] overflow-auto">
           <summary>Contents</summary>
           <NuxtLink
+            v-if="page"
             :href="`#${item.id}`"
-            v-for="item in page.body?.toc?.links"
+            v-for="item in page.body.toc?.links"
             :key="item.id"
             class="va-button"
             :class="{

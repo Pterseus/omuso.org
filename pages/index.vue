@@ -13,8 +13,8 @@ const { data: list } = await useAsyncData('texts', () => {
 <template>
   <div class="section section--hero">
     <div class="section__container">
-      <h2>{{ t('welcome') }}</h2>
-      <p>{{ t('slogan') }}</p>
+      <h2>{{ t('slogan') }}</h2>
+      <p>{{ t('description') }}</p>
     </div>
   </div>
   <div class="container">

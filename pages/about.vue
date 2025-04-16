@@ -12,6 +12,13 @@ const { data: page } = await useAsyncData('about', async () =>
     .path(`/${slug.value}`)
     .first()
 )
+
+const { title, description } = page.value ?? {}
+
+useSeoMeta({
+  title,
+  description
+})
 </script>
 
 <template>

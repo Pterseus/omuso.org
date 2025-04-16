@@ -7,6 +7,11 @@ const { data: list } = await useAsyncData('texts', () => {
   return queryCollection('readings').all()
 })
 
+useSeoMeta({
+  title: t('library'),
+  description: t('library-description')
+})
+
 const links = [{ label: t('home'), to: 'index' }]
 </script>
 
@@ -15,7 +20,7 @@ const links = [{ label: t('home'), to: 'index' }]
     <div class="section__container">
       <Breadcrumbs :links="links" class="mb-4" />
       <h1>{{ t('library') }}</h1>
-      <p>A curated list of ancient literature</p>
+      <h2>{{ t('library-description') }}</h2>
     </div>
   </header>
   <div class="py-6 container">

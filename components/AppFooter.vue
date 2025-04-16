@@ -1,7 +1,6 @@
 <script setup>
 import ThemeSelector from './ThemeSelector.vue'
-const { t, locale, locales, setLocale, availableLocales } = useI18n()
-const localePath = useLocalePath()
+const { t, locale, availableLocales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 </script>
 
@@ -26,8 +25,8 @@ const switchLocalePath = useSwitchLocalePath()
           <NuxtLinkLocale to="/terms" class="hover:underline">{{ t('terms') }}</NuxtLinkLocale>
         </div>
         <div class="flex gap-4">
-          <NuxtLink to="https://github.com/Pterseus" class="hover:underline" external>GitHub</NuxtLink>
-          <NuxtLink to="mailto:info@omuso.org" class="hover:underline" external>Contact</NuxtLink>
+          <NuxtLink to="https://github.com/Pterseus/omuso.org" class="hover:underline" external>GitHub</NuxtLink>
+          <NuxtLink to="https://github.com/Pterseus" class="hover:underline" external>Contact</NuxtLink>
         </div>
       </div>
       <div class="pt-4 border-t">
