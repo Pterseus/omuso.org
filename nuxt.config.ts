@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   },
   i18n: {
     defaultLocale: 'en',
+    baseUrl: process.env.BASE_URL,
     locales: [
       {
         code: 'en',
